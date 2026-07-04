@@ -8,7 +8,7 @@ app = FastAPI(title="AI Content Researcher", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # tighten to your Vercel domain in prod
+    allow_origins=["https://ai-content-researcher.vercel.app"],  # tighten to your Vercel domain in prod
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
