@@ -303,7 +303,10 @@ export default function App() {
               background: 'linear-gradient(135deg, #5B6CF8, #00D4FF)',
               display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 16,
             }}>🔬</div>
-            <span style={{ fontWeight: 700, fontSize: 15, letterSpacing: '-.025em' }}>ResearchAI</span>
+            <span style={{fontWeight: 700, fontSize: 20, letterSpacing: '-.025em' , lineHeight: 1.08, marginBottom: 5,
+                background: 'linear-gradient(135deg, #E2EAF8 20%, #5B6CF8 60%, #00D4FF 100%)',
+                WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+              }}>AI Content Researcher</span>
             <span style={{ fontSize: 10, background: '#131C30', border: '1px solid #1E2D4A', borderRadius: 99, padding: '2px 9px', color: '#5B6CF8', fontWeight: 700, letterSpacing: '.05em' }}>BETA</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
@@ -312,7 +315,7 @@ export default function App() {
                 {elapsed}s
               </div>
             )}
-            <div style={{ fontSize: 11, color: '#3A5070', display: 'flex', alignItems: 'center', gap: 6 }}>
+            <div style={{ fontSize: 15, color: '#3A507', display: 'flex', alignItems: 'center', gap: 6 }}>
               <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#10B981', display: 'inline-block', boxShadow: '0 0 8px #10B981' }} />
               Groq · Tavily
             </div>
@@ -338,7 +341,15 @@ export default function App() {
                 background: 'linear-gradient(135deg, #E2EAF8 20%, #5B6CF8 60%, #00D4FF 100%)',
                 WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
               }}>
-                Deep research,<br />in seconds.
+                AI Content Researcher<br />
+              </h1>
+              <h1 style={{
+                fontSize: 'clamp(1rem, 3vw, 2.5rem)', fontWeight: 800,
+                letterSpacing: '-.045em', lineHeight: 1.08, marginBottom: 20,
+                background: 'linear-gradient(135deg, #E2EAF8 20%, #5B6CF8 60%, #00D4FF 100%)',
+                WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+              }}>
+                Deep research , in seconds.
               </h1>
               <p style={{ color: '#4A6080', fontSize: 17, maxWidth: 500, margin: '0 auto 48px', lineHeight: 1.75 }}>
                 Type a topic. Watch the pipeline decompose it, search the web,
